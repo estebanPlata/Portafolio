@@ -10,7 +10,7 @@ export function RedesSociales(){
                     </a>
                     <a class="btn instagram" href="https://www.instagram.com/eaplata/"target="_blank"><i class="fa fa-instagram"></i>
                     </a>
-                    <a class="btn youtube" href="#"><i class="fa fa-git"></i></a>
+                    <a class="btn youtube" href="https://github.com/estebanPlata/"target="_blank"><i class="fa fa-git"></i></a>
                 </div>
     )
 }
