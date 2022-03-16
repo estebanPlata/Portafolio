@@ -1,0 +1,9 @@
+.mainConteiner{
+    height: 100vh;
+    background-color: rgb(255, 0, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 5vw;
+}

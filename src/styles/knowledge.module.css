@@ -1,0 +1,12 @@
+.mainCounteiner{
+    background-color: #ffffff;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: center; */
+    align-items: flex-start;
+    width: 95vw;
+    margin-left: 5vw;
+    font-family: 'Vollkorn', serif; 
+    padding-top: 20vh;
+}

@@ -1,0 +1,84 @@
+.encabezado{/* contenedor del encabezado */
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   background-color: #5569DC;
+   color: rgb(255, 255, 255);
+}
+.encabezado h1{
+    display: none;
+    font-family: 'Vollkorn', serif;
+    height: 10vh;
+    margin-left: 2vw;
+}
+
+.listaMenu{/* lista del menu */
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-family: 'Style Script', cursive;
+    font-family: 'Vollkorn', serif;
+    background-color: #5569DC;
+}
+
+.listaMenu li{/* componentes de la lista del menu */
+    font-size: 2vw;
+    text-decoration: none;
+    margin-right: 2vw;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+    width: 12vw;
+    text-align: center;
+    
+   /*  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008ae6, 0 0 40px #008ae6, 0 0 50px #008ae6, 0 0 60px #008ae6, 0 0 #008ae6; */
+}
+.listaMenu li a{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+.listaBoton{
+    display: none;
+} 
+.desMenu{
+    transition:all .5s linear;  
+}
+.desMenuItem{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 8vw;
+    text-align: center;
+}
+.hamburguesa{
+    height: 100%;
+    width: 30vw;
+    background-color: #5569DC;
+    border: none;
+}
+@media screen and (max-width: 750px){
+    .listaMenu{
+        display: none;
+    }
+    .listaBoton{
+        display: block;
+        width: 15vw;
+        justify-content: flex-end;
+    }
+    .encabezado{
+        justify-content: flex-end;
+        padding-right: 18vw;
+       }
+    .encabezado h1{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 70vw;
+        text-align: center;
+        padding: 3%;
+    }
+}
+
+.liStyle{
+    color: aqua;
+}
+
+

@@ -1,0 +1,31 @@
+
+.mainCounteiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #EEF0FE;
+}
+.title{
+    margin-top: 10vh;
+    font-size: 5vw;
+    font-family: 'Style Script', cursive;
+    font-family: 'Vollkorn', serif;
+    color: #5569DC;
+}
+.mainCounteinerItem{
+    width: 75vw;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.8vw;
+    color: #8884A1;
+}
+@media screen and (max-width: 750px){
+    .mainCounteinerItem{
+        font-size: 6vw;
+        width: 85vw;
+    }
+    .title{
+        font-size: 10vw;
+    }
+}

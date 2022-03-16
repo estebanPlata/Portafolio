@@ -6,8 +6,229 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+header{
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 10vh;
+}
+
+
+
+
+
+
+
+
+
+.social-btns .btn,.social-btns .btn .fa,.social-btns .btn:before{
+  transition:all .35s;
+  transition-timing-function:cubic-bezier(0.31,-.105,.43,1.59)
+}
+.social-btns .btn:before{
+  top:90%;
+  left:-110%
+}
+.social-btns .btn .fa{
+  -webkit-transform:scale(0.8);
+  transform:scale(0.8)
+}
+.social-btns .btn.facebook:before{
+  background-color:#3b5998
+}
+.social-btns .btn.facebook .fa{
+  color:#3b5998
+}
+.social-btns .btn.twitter:before{
+  background-color:rgb(13, 146, 42)
+}
+.social-btns .btn.twitter .fa{
+  color:rgb(36, 124, 19)
+} 
+.social-btns .btn.youtube:before{
+  background-color:rgb(17, 1, 1)
+}
+.social-btns .btn.youtube .fa{
+  color:rgb(26, 2, 2)
+}
+.social-btns .btn.instagram:before{
+  background-color:#c13584
+}
+.social-btns .btn.instagram .fa{
+  color:#c13584
+}
+.social-btns .btn:focus:before,.social-btns .btn:hover:before{
+  top:-10%;left:-10%
+}
+.social-btns .btn:focus .fa,.social-btns .btn:hover .fa{
+  color:#fff;
+  -webkit-transform:scale(1);
+  transform:scale(1)
+}
+.social-btns{
+  height:90px;
+  margin:auto;
+  font-size:0;
+  text-align:center;
+  top:0;
+  position: relative;
+  bottom:0;
+  left:0;
+  right:0
+}
+.social-btns .btn{
+  display:inline-block;
+  background-color:#fff;
+  width:50px;
+  height:50px;
+  line-height:35px;
+  margin:0 7px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  border-radius:28%;
+  box-shadow:0 5px 15px -5px rgba(0,0,0,.1);
+}
+ /*  */
+.social-btns .btn:before{
+  content:'';
+  width:120%;
+  height:120%;
+  position:absolute;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg)
+}
+.social-btns .btn .fa{
+  font-size:38px;
+  vertical-align:middle;
+}
+
+
+
+  
+.burbuja{
+  border-radius: 50%;
+  background:#eff5f8;
+  opacity: .3;
+  position: absolute;
+  bottom: -150;
+  animation: burbujas 3s linear infinite ;
+
+}
+
+.burbuja:nth-child(1){
+  width: 7vw;
+  height: 7vw;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+  width: 5.5vw;
+  height: 5.5vw;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+  width: 1.2vw;
+  height: 1.2vw;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+  width: 3.5vw;
+  height: 3.5vw;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+  width: 6vw;
+  height: 6vw;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+  width: 1.8vw;
+  height: 1.8vw;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+  width: 2.5vw;
+  height: 2.5vw;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+  width: 3vw;
+  height: 3vw;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+  width: 4vw;
+  height: 4vw;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+  width: 3vw;
+  height: 3vw;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+  0%{
+      bottom: 0;
+      opacity: 0;
+  }
+  30%{
+      transform: translateX(30px);
+  }
+  50%{
+      opacity: .4;
+  }
+  100%{
+      bottom: 100vh;
+      opacity: 0;
+  }
+}
+
+@keyframes movimiento{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(30px);
+  }
+  100%{
+      transform: translateY(0);
+  }
 }
